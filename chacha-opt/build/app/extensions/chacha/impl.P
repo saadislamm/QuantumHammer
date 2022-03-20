@@ -1,0 +1,8 @@
+build/app/extensions/chacha/impl.o: app/extensions/chacha/impl.c \
+ framework/include/cpuid.h framework/include/asmopt_internal.h \
+ framework/include/asmopt.h framework/driver/x86/cpuid_flags.inc \
+ app/include/chacha.h app/extensions/chacha/chacha_ref.inc
+app/extensions/chacha/impl.c :
+ framework/include/cpuid.h framework/include/asmopt_internal.h :
+ framework/include/asmopt.h framework/driver/x86/cpuid_flags.inc :
+ app/include/chacha.h app/extensions/chacha/chacha_ref.inc :

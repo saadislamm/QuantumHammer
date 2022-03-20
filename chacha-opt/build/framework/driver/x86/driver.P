@@ -1,0 +1,6 @@
+build/framework/driver/x86/driver.o: framework/driver/x86/driver.S \
+ framework/driver/gcc_driver.inc framework/include/asmopt_internal.h \
+ framework/include/asmopt.h framework/driver/x86/gcc.inc
+framework/driver/x86/driver.S :
+ framework/driver/gcc_driver.inc framework/include/asmopt_internal.h :
+ framework/include/asmopt.h framework/driver/x86/gcc.inc :

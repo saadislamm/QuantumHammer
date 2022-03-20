@@ -1,0 +1,27 @@
+PROJECTNAME=chacha
+CC=gcc
+CFLAGS= -m64 -fvisibility=hidden -DLIB_PUBLIC="__attribute__ ((visibility (\"default\")))" -O2 -DBUILDING_ASMOPT_CHACHA
+AR=ar rc 
+LD=gcc -o 
+RANLIB=ranlib
+STRIP=strip
+INSTALL=install
+HAVEAS=yes
+HAVESHARED=no
+AS=gcc
+ASFLAGS= -m64 -c
+ARCH=x86
+EXE=
+STATICLIB=.lib
+DEPMM=-MMD
+DEPMF=-MF
+SONAME=libchacha.so.1
+SOIMPORT=
+SOSUFFIX=so
+SOFLAGS=-shared -Wl,-soname,$(SONAME) 
+LDFLAGS= -m64
+exec_prefix=/usr/local
+bindir=/usr/local/bin
+libdir=/usr/local/lib
+includedir=/usr/local/include
+appdir=app

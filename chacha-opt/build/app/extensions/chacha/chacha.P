@@ -1,0 +1,6 @@
+build/app/extensions/chacha/chacha.o: app/extensions/chacha/chacha.S \
+ framework/driver/gcc_driver.inc framework/include/asmopt_internal.h \
+ framework/include/asmopt.h framework/driver/x86/gcc.inc
+app/extensions/chacha/chacha.S :
+ framework/driver/gcc_driver.inc framework/include/asmopt_internal.h :
+ framework/include/asmopt.h framework/driver/x86/gcc.inc :

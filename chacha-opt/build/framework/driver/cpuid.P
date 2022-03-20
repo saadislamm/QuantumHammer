@@ -1,0 +1,8 @@
+build/framework/driver/cpuid.o: framework/driver/cpuid.c \
+ framework/include/cpuid.h framework/include/asmopt_internal.h \
+ framework/include/asmopt.h framework/driver/x86/cpuid_flags.inc \
+ framework/driver/x86/cpuid_impl.inc
+framework/driver/cpuid.c :
+ framework/include/cpuid.h framework/include/asmopt_internal.h :
+ framework/include/asmopt.h framework/driver/x86/cpuid_flags.inc :
+ framework/driver/x86/cpuid_impl.inc :
